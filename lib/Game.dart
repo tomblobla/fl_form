@@ -16,7 +16,7 @@ class Game {
 
   static String Boi() {
     int point = ConvertNameToPoint();
-    if (point == 0) return "vava";
+    if (point == 0) return "Chưa nhập tên";
 
     //shorter the number like 89 => 8 + 9 = 17 => 1 + 7 = 8 (final)
     while (point > 9) {
@@ -31,7 +31,7 @@ class Game {
       point = newpoint;
     }
 
-    return result[point];
+    return result[point - 1];
   }
 
   static int ConvertNameToPoint() {
